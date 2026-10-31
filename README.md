@@ -4,34 +4,45 @@
 **School:** School of Computer Science Engineering and Information Systems (SCORE)  
 **Institution:** Vellore Institute of Technology (VIT), Vellore  
 **Academic Year:** 2026–2027  
+**Repository Link:** [https://github.com/fratnix9/Campus-Lost-and-Found-System](https://github.com/fratnix9/Campus-Lost-and-Found-System)
 
 ---
 
-## 🚀 Quick Start Guide: How to Run the Project
+## 🚀 Quick Start Guide: How to Open and Run the Project
 
-### Option 1: Live Interactive Web Application (Review III Full Demonstration)
-*Zero external dependencies required. Runs out-of-the-box using Python's built-in standard library.*
-
-1. **One-Click Run (Windows):**  
-   Double-click **`run_web_app.bat`** in the project root folder.
-2. **Or via Terminal / PowerShell:**
-   ```bash
-   python run_web_app.py
-   ```
-3. Open your browser and navigate to:  
-   👉 **`http://127.0.0.1:5000`**
-
-**Web Dashboard Features:**
-* **Catalog & Live Search:** Real-time multi-criteria filtering by category, status, and campus building.
-* **Student Services:** Report lost/found articles, submit ownership claims with physical proof, and view personal activity profiles via `FUNC_GET_STUDENT_ACTIVITY`.
-* **Security Admin Portal:** Adjudicate pending claims (`PROC_VERIFY_CLAIM`) and run the explicit cursor batch audit slider (`PROC_FLAG_LONG_UNCLAIMED_ITEMS`).
-* **Review III Live Suite:** 1-Click execution of all 5 mandated real-world transactions answering the official evaluation criteria.
-* **SQL Reports Console:** Live execution grid for all 16 analytical queries.
+> **Prerequisites:** Python 3.8 or higher installed.  
+> **Zero Dependencies:** No external `pip` packages needed! The entire system is built using Python's native standard library (`http.server`, `sqlite3`, `json`, `urllib`).
 
 ---
 
-### Option 2: Interactive Terminal Demonstration System (Review II CLI)
-If you prefer running in the terminal / console:
+### Step 1: Download or Clone the Repository
+* **Option A:** Click the green **`<> Code`** button at the top of this GitHub page $\rightarrow$ select **`Download ZIP`**, then extract the ZIP on your PC.  
+* **Option B:** Or clone via terminal:
+  ```bash
+  git clone https://github.com/fratnix9/Campus-Lost-and-Found-System.git
+  cd Campus-Lost-and-Found-System
+  ```
+
+---
+
+### Step 2: Run the Web Application (Review III Demonstration)
+
+#### 🟢 Method A: The 1-Click Way (Windows)
+* Simply **double-click `run_web_app.bat`** in the project folder.  
+* This automatically starts the backend server and immediately opens **`http://127.0.0.1:5000`** in your default web browser!
+
+#### 🔵 Method B: Via Terminal / Command Prompt / VS Code
+Open your terminal in the project directory and run:
+```bash
+python run_web_app.py
+```
+Then open your web browser and navigate to:  
+👉 **`http://127.0.0.1:5000`** *(or `http://localhost:5000`)*
+
+---
+
+### Step 3: Run the Interactive Terminal Console (Review II CLI)
+If evaluating via command-line menu:
 ```bash
 cd app
 python app.py
@@ -45,23 +56,23 @@ python app.py
 
 ---
 
-### Option 3: Direct Oracle Database Execution (FreeSQL / SQL Developer)
-To execute directly in Oracle Database (19c/21c/23ai/FreeSQL):
-1. Connect to your Oracle schema.
+### Step 4: Execute in Oracle Database (FreeSQL / SQL Developer / SQL*Plus)
+All relational SQL scripts are pre-packaged in the **`sql/`** directory:
+1. Connect to your Oracle database schema.
 2. Run the master script:
    ```sql
    @sql/06_master_run_all.sql
    ```
-   Or execute scripts in order:
-   * `sql/01_create_tables.sql` (DDL & 3NF Constraints)
+   Or execute individual scripts in sequence:
+   * `sql/01_create_tables.sql` (DDL & 3NF Schema Constraints)
    * `sql/02_insert_sample_data.sql` (72+ Records across 7 tables)
-   * `sql/04_plsql_components.sql` (Procedures, Functions, Triggers, Cursors)
-   * `sql/03_queries.sql` (16 Analytical Queries)
-   * `sql/05_dml_demonstration.sql` (Insert, Update, Delete & Constraint Verification)
+   * `sql/04_plsql_components.sql` (Stored Procedures, Functions, Triggers & Cursors)
+   * `sql/03_queries.sql` (16 Analytical SQL Queries)
+   * `sql/05_dml_demonstration.sql` (DML Verification & Transaction Rollback tests)
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Directory Structure
 
 ```
 Campus_Lost_and_Found_System/
