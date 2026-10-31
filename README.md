@@ -1,21 +1,21 @@
-# Campus Lost and Found Management System
-### BCSE302L - Database Systems | Course Project Implementation
+Campus Lost and Found Management System
+BCSE302L - Database Systems 
 **Student:** Arahat Gaikwad (Reg No: 24BYB0182)  
-**School:** School of Computer Science Engineering and Information Systems (SCORE)  
+**School:**  SCORE  
 **Institution:** Vellore Institute of Technology (VIT), Vellore  
 **Academic Year:** 2026–2027  
 **Repository Link:** [https://github.com/fratnix9/Campus-Lost-and-Found-System](https://github.com/fratnix9/Campus-Lost-and-Found-System)
 
 ---
 
-## 🚀 Quick Start Guide: How to Open and Run the Project
+ 🚀 Quick Start Guide: How to Open and Run the Project
 
 > **Prerequisites:** Python 3.8 or higher installed.  
 > **Zero Dependencies:** No external `pip` packages needed! The entire system is built using Python's native standard library (`http.server`, `sqlite3`, `json`, `urllib`).
 
 ---
 
-### Step 1: Download or Clone the Repository
+ Step 1: Download or Clone the Repository
 * **Option A:** Click the green **`<> Code`** button at the top of this GitHub page $\rightarrow$ select **`Download ZIP`**, then extract the ZIP on your PC.  
 * **Option B:** Or clone via terminal:
   ```bash
@@ -25,13 +25,13 @@
 
 ---
 
-### Step 2: Run the Web Application (Review III Demonstration)
+Step 2: Run the Web Application (This is the demonstration for Review III )
 
-#### 🟢 Method A: The 1-Click Way (Windows)
+ 🟢 Method A: The 1-Click Way (Windows)
 * Simply **double-click `run_web_app.bat`** in the project folder.  
 * This automatically starts the backend server and immediately opens **`http://127.0.0.1:5000`** in your default web browser!
 
-#### 🔵 Method B: Via Terminal / Command Prompt / VS Code
+🔵 Method B: Via Terminal / Command Prompt / VS Code
 Open your terminal in the project directory and run:
 ```bash
 python run_web_app.py
@@ -41,7 +41,7 @@ Then open your web browser and navigate to:
 
 ---
 
-### Step 3: Run the Interactive Terminal Console (Review II CLI)
+Step 3: Run the Interactive Terminal Console (This is the demonstration of Review II CLI)
 If evaluating via command-line menu:
 ```bash
 cd app
@@ -56,7 +56,7 @@ python app.py
 
 ---
 
-### Step 4: Execute in Oracle Database (FreeSQL / SQL Developer / SQL*Plus)
+Step 4: Execute in Oracle Database (FreeSQL / SQL Developer / SQL*Plus) [I used FreeSQL] 
 All relational SQL scripts are pre-packaged in the **`sql/`** directory:
 1. Connect to your Oracle database schema.
 2. Run the master script:
@@ -71,8 +71,7 @@ All relational SQL scripts are pre-packaged in the **`sql/`** directory:
    * `sql/05_dml_demonstration.sql` (DML Verification & Transaction Rollback tests)
 
 ---
-
-## 📁 Project Directory Structure
+📁 Project Directory Structure
 
 ```
 Campus_Lost_and_Found_System/
@@ -101,7 +100,7 @@ Campus_Lost_and_Found_System/
 
 ---
 
-## 📊 Summary of Syllabus & Evaluation Compliance
+📊 Summary of Syllabus & Evaluation Compliance
 
 | Evaluation Component | Implementation in Project | File Reference |
 | :--- | :--- | :--- |
