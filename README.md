@@ -30,7 +30,7 @@ Campus_Lost_and_Found_Project/
 
 ## 🚀 Quick Start Guide
 
-### Option 1: Run the Interactive Python Demonstration System (Recommended for Viva)
+### Option 1: Run the Interactive Python Demonstration System 
 No database installation or server setup is required. The embedded engine is pre-loaded with the entire schema, constraints, triggers, and sample data.
 
 ```bash
@@ -38,7 +38,7 @@ cd "Campus_Lost_and_Found_Project/app"
 python app.py
 ```
 
-#### Application Features:
+Application Features:
 * **Option 1 & 2:** Student Portal (Report Lost / Found Items)
 * **Option 3:** Search Catalog by keyword, category, or location
 * **Option 4:** Submit Claim with Proof (`PROC_SUBMIT_CLAIM`)
@@ -50,7 +50,7 @@ python app.py
 
 ---
 
-### Option 2: Execute in Oracle SQL Developer / SQL*Plus / Oracle APEX
+ Option 2: Execute in Oracle SQL Developer / SQL*Plus / Oracle APEX
 To run the full suite in Oracle Database (19c/21c/XE/LiveSQL):
 
 1. Open **Oracle SQL Developer** or launch `sqlplus`.
@@ -68,7 +68,7 @@ To run the full suite in Oracle Database (19c/21c/XE/LiveSQL):
 
 ---
 
-## 📊 Summary of Guideline Compliance
+📊 Summary of Guideline Compliance
 
 | Guideline Requirement | Project Implementation | File Reference |
 | :--- | :--- | :--- |
