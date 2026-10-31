@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; padding: 20px; background: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  .window { width: 820px; border: 1px solid #c0c0c0; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; background: #fff; }
+  .titlebar { background: #f0f0f0; border-bottom: 1px solid #dcdcdc; padding: 6px 12px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 600; color: #222; }
+  .title-left { display: flex; align-items: center; gap: 8px; }
+  .icon-sq { width: 10px; height: 10px; background: #c00000; border-radius: 1px; }
+  .close-btn { color: #888; font-size: 14px; cursor: pointer; }
+  .code-area { padding: 12px 16px; font-family: "Consolas", monospace; font-size: 13px; line-height: 1.5; color: #000; background: #ffffff; border-bottom: 1px solid #e0e0e0; }
+  .kw { color: #0000cc; font-weight: bold; }
+  .str { color: #cc0000; }
+  .cmt { color: #008800; font-style: italic; }
+  .num { color: #777; display: inline-block; width: 28px; user-select: none; }
+  .tab-header { background: #f7f7f7; border-bottom: 1px solid #e0e0e0; padding: 6px 16px; font-size: 12px; display: flex; align-items: center; gap: 15px; }
+  .tab-title { font-weight: bold; color: #333; display: flex; align-items: center; gap: 6px; }
+  .tab-meta { color: #666; font-size: 11px; }
+  .output-pane { padding: 12px 16px; font-family: "Consolas", monospace; font-size: 13px; color: #111; line-height: 1.4; min-height: 120px; background: #fff; }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <div class="title-left"><div class="icon-sq"></div> Oracle SQL Developer : CAMPUS_LOST_FOUND</div>
+    <div class="close-btn">&#10005;</div>
+  </div>
+  <div class="code-area">
+    <div><span class="num">1</span><span class="cmt">-- INSERT: add a new student and campus location</span></div>
+    <div><span class="num">2</span><span class="kw">INSERT INTO</span> STUDENT <span class="kw">VALUES</span> (<span class="str">'24BCS9999'</span>, <span class="str">'Rishi Mukherjee'</span>, <span class="str">'rishi.m@vit.ac.in'</span>, <span class="str">'9898989898'</span>);</div>
+    <div><span class="num">3</span><span class="kw">COMMIT</span>;</div>
+  </div>
+  <div class="tab-header">
+    <div class="tab-title">Script Output &#10005;</div>
+    <div class="tab-meta">Task completed in 0.042 seconds</div>
+  </div>
+  <div class="output-pane">
+    1 row inserted.<br><br>Commit complete.
+  </div>
+</div>
+</body>
+</html>

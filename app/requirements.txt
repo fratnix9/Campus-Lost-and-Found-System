@@ -1,0 +1,5 @@
+# Campus Lost and Found Management System
+# Core requirements (Standard library sqlite3 is built-in and requires zero installation)
+
+# Optional dependency for live connection to Oracle Database (19c/21c/XE):
+oracledb>=2.0.0
