@@ -8,6 +8,11 @@ generate_*.py
 test*
 *.html
 
+# Binary office documents & slides (submitted separately via portal)
+*.docx
+*.pptx
+*.pdf
+
 # IDE & Editor files
 .vscode/
 .idea/
